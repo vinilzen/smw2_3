@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    meta charset="utf-8" 
+    meta content="IE=edge" http-equiv="X-UA-Compatible" 
+    title Горизонтальный с двумя товарами
+    link href="css/main.css" rel="stylesheet" type="text/css" 
+  body
+    .test-container style=("padding:5px;") 
+      .sm_w2_3.sm_w2_3vert
+        .sm_w2_3container
+          .sm_w2_3row.sm_w2_3row-head
+            .sm_w2_3col-12.sm_w2_3item-title
+              h1.sm_w2_3upfontsize
+                | Предложения дня 
+                br
+                  | в городе
+                  a.sm_w2_3change-city href="http://" target="_blank" Москва
+
+          .sm_w2_3row.sm_w2_3row-body
+            .sm_w2_3col-4
+              a href="#"
+                img.sm_w2_3img-responsive.sm_w2_3item-photo.sm_w2_3item-three-photo alt="" src="img/htc.png"
+            .sm_w2_3col-8.sm_w2_3item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .sm_w2_3all-prop
+                a
+                  span.sm_w2_3txt Все предложения
+                  span.sm_w2_3count 25
+            .sm_w2_3col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .sm_w2_3row.sm_w2_3row-body
+            .sm_w2_3col-4
+              a href="#"
+                img.sm_w2_3img-responsive.sm_w2_3item-photo.sm_w2_3item-three-photo alt="" src="img/htc.png"
+            .sm_w2_3col-8.sm_w2_3item-three-title
+              h1
+                a Apple iPhone 5 16Gb 
+                br
+                  | от
+                  a 22 400 р
+              .sm_w2_3all-prop
+                a
+                  span.sm_w2_3txt Все предложения
+                  span.sm_w2_3count 25
+            .sm_w2_3col-12
+              == Slim::Template.new("tbl-sm2.slim").render
+          .sm_w2_3row.sm_w2_3row-footer
+            .sm_w2_3col-12.sm_w2_3power
+              p.sm_w2_3text-center
+                | Powered by
+                a SocialMart
+              p.sm_w2_3text-center
+                | Данные – 
+                a href="#" Яндекс-маркет

@@ -1,0 +1,56 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.sm_w2_3clearfix {
+  @include clearfix();
+}
+.sm_w2_3center-block {
+  @include center-block();
+}
+.sm_w2_3pull-right {
+  float: right !important;
+}
+.sm_w2_3pull-left {
+  float: left !important;
+}
+
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.sm_w2_3hide {
+  display: none !important;
+}
+.sm_w2_3show {
+  display: block !important;
+}
+.sm_w2_3invisible {
+  visibility: hidden;
+}
+.sm_w2_3text-hide {
+  @include text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.sm_w2_3hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.sm_w2_3affix {
+  position: fixed;
+}
