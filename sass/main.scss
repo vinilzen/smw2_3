@@ -74,6 +74,8 @@
               color: $title-color;
               font-weight: bold;
               font-size: 12px;
+              min-width: 64px;
+              display: inline-block;
           }
         }
     }
@@ -206,8 +208,9 @@
         }
         &.sm_w2_3last-call {
           padding-right: 8px;
-          padding-left: 24px;
+          padding-left: 0;
           width: 87px;
+          text-align: right;
         }
         &.sm_w2_3midl-call {
           width: 62px;
