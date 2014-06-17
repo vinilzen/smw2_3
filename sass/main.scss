@@ -190,6 +190,13 @@
         &.sm_w2_3first-call {
           padding-left: 8px;
           min-width: 73px;
+          @media (max-width: 550px) {
+            min-width: 76px;
+            text-overflow: ellipsis;
+            max-width: 76px;
+            overflow: hidden;
+          }
+
           a {
             display: inline;
           }
@@ -204,10 +211,18 @@
         }
         &.sm_w2_3midl-call {
           width: 62px;
+          min-width: 60px;
+          padding-left: 10px;
+          @media (max-width: 550px) {
+            
+            padding-left: 5px;
+            min-width: 55px;
+          }
         }
         padding-bottom: 3px;
         padding-top: 1px;
 
+        text-align: left;
       }
       tr:hover {
         cursor: pointer;
