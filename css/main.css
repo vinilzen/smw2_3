@@ -646,5 +646,15 @@
     display: none !important;
   }
 }
+.sm_w2_3 .sm_w2_3compare.sm_w2_3three-tbl td.sm_w2_3first-call {
+  min-width: 76px;
+  text-overflow: ellipsis;
+  max-width: 76px;
+  overflow: hidden;
+}
+.sm_w2_3 .sm_w2_3compare.sm_w2_3three-tbl td.sm_w2_3midl-call {
+  padding-left: 5px;
+  min-width: 55px;
+}
 
 /*# sourceMappingURL=main.css.map */
